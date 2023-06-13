@@ -1,0 +1,3 @@
+bruna;78432;8934;computacao
+israelly;57639;234;comp
+luisa;4587;432;comp
