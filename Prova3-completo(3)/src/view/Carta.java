@@ -59,15 +59,6 @@ public class Carta {
 		return botao;
 	}
 
-//	public void setBotao(JButton botao) {
-//		this.botao = botao;
-//	}
-	
-//	public void setIcon(String diretorio) {
-//		icon= new ImageIcon(diretorio);
-//		botao.setIcon(icon);
-//	}
-
 	public boolean isSelecionado() {
 		return selecionado;
 	}
@@ -81,14 +72,6 @@ public class Carta {
 		selecionado = false;
 		botao.setBackground(COR_DESSELECIONADO);
 	}
-	
-//	public PainelMesa getPainelMesa() {
-//		return painelMesa;
-//	}
-//
-//	public void setPainelMesa(PainelMesa painelMesa) {
-//		this.painelMesa = painelMesa;
-//	}
 	
 	private class AcaoSelecionarCarta implements ActionListener {
 		public void actionPerformed(ActionEvent e) {

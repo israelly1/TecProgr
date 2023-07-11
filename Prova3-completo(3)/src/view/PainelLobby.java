@@ -39,7 +39,6 @@ public class PainelLobby extends JPanel {
 		numeroJogadores = 0;
 		
 		JButton botaoIniciar = new JButton("INICIAR JOGO");
-//	    botaoIniciar.addActionListener(new EventoIniciarJogada(this));
 	    botaoIniciar.addActionListener(new AcaoComecarJogo());
 	    botaoIniciar.setBackground(Color.orange);
 	    panel2.add(botaoIniciar);

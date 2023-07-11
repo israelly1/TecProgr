@@ -80,13 +80,6 @@ public class Apresentacao implements InterfaceGrafica {
 		return instancia;
 	}
 	
-	/*
-	public Apresentacao() {
-		this.janelaEntrada= new JanelaEntrada();
-		iniciarTelaEntrada();
-	}
-	*/
-
 	public void iniciarTelaEntrada() {
 		janelaEntrada.setVisible(true);
 		janelaPrincipal.setVisible(false);
@@ -99,13 +92,6 @@ public class Apresentacao implements InterfaceGrafica {
 		janelaPrincipal.atualizarJogadores(nomesJogadores);
 	}
 
-	/*
-	public void entrarLobby(ArrayList<Jogadores>listaJogadores, int porta) {
-		janela.getPainelEntrada().setPorta(porta);
-		janela.getPainelEntrada().getPainelIntermediario().setListaJogadores(listaJogadores);
-	}
-	*/
-	
 	public void atualizarPontuacao(ArrayList<String> nomesJogadores, ArrayList<Integer> pontuacoes) {
 		janelaPrincipal.atualizarJogadores(nomesJogadores, pontuacoes);
 	}
@@ -167,9 +153,4 @@ public class Apresentacao implements InterfaceGrafica {
 		janelaPrincipal.setParte2(false);
 		
 	}
-	
-//	public void avisoTelaPrincipal(String mensagem) {
-//		janelaPrincipal.aviso(mensagem);
-//	}
-	
 }

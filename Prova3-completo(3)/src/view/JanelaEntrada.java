@@ -18,11 +18,7 @@ public class JanelaEntrada extends JFrame {
 		painelInicial.setVisible(true);
 		painelLobby = new PainelLobby();
 		painelLobby.setVisible(false);
-//		
-//		painelInicial.setJanela(this);
-//		painelInicial.setVisible(true);
-//		painelInicial.getPainelIntermediario().setVisible(false);
-		
+
 		setLayout(new BorderLayout());
 		add(painelInicial);
 		

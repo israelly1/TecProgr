@@ -29,8 +29,6 @@ public class JanelaPrincipal extends JFrame {
 	private boolean esperar;
 	private boolean parte2;
 	
-//	private PainelInicial painelEntrada;
-
 	public JanelaPrincipal() {
 		esperar = true;
 		parte2 = false;
@@ -38,7 +36,6 @@ public class JanelaPrincipal extends JFrame {
 		this.setSize(new Dimension(600,600));
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-//		this.setTitle(this.title);
 		this.setLayout(new BorderLayout());
 		
 		panel1= new JPanel();
@@ -110,7 +107,6 @@ public class JanelaPrincipal extends JFrame {
 		for (int i = 0; i < labelsJogadores.size() && i < nomesJogadores.size(); i++) {
 			labelsJogadores.get(i).setText(nomesJogadores.get(i) + " - 0");
 		}
-		
 	}
 	
 	protected void atualizarJogadores(
@@ -121,7 +117,6 @@ public class JanelaPrincipal extends JFrame {
 				labelsJogadores.get(i).setText(nomesJogadores.get(i) + " - " + pontosJogadores.get(i));
 			}
 		}
-		
 	}
 	
 	public boolean isJogadorVez() {
@@ -154,18 +149,6 @@ public class JanelaPrincipal extends JFrame {
 
 	public void setPainelMesa(PainelMesa painelMesa) {
 		this.painelMesa = painelMesa;
-	}
-
-	public void setPainelEntrada(PainelInicial painelEntrada) {
-//		this.painelEntrada = painelEntrada;
-	}
-	
-	public void PercorrerJogadores() {
-//		for (Jogadores jogadores : painelEntrada.getPainelIntermediario().getListaJogadores()) {
-//			String nome= jogadores.getNome() + "    " +  Integer.toString(jogadores.getPontuacao());
-//			JLabel jogador = new JLabel(nome);
-//			panelPlacar.add(jogador);
-//		}
 	}
 	
 	public void aviso(String mensagem) {
