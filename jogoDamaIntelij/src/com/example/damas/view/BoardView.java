@@ -1,6 +1,8 @@
 package com.example.damas.view;
 
 import com.example.damas.model.Board;
+import com.example.damas.model.Piece;
+import com.example.damas.model.PieceColor;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -17,7 +19,7 @@ public class BoardView extends JPanel {
         this.setLayout(new GridLayout(8, 8));
     }
 
-    public void montarTabuleiro() {
+    private void montarTabuleiro() {
         boolean preta = true;
         for (int i = 0; i < 7; i++) {
             for (int j = 0; j < 7; j++) {
@@ -48,14 +50,39 @@ public class BoardView extends JPanel {
     }
 
     public void displayBoard(Board board) {
-        // Mostrar board na tela
+        this.removeAll();
+
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                JButton cell = new JButton();
+
+                Piece piece = board.boardGrid()[i][j];
+
+                if (piece != null) {
+                    String assetLocation = "";
+                    if (piece.pieceColor() == PieceColor.BLACK) assetLocation = "images/pretas.png";
+                    if (piece.pieceColor() == PieceColor.WHITE) assetLocation = "images/brancas.png";
+                    cell.setIcon(new ImageIcon(assetLocation));
+                }
+
+                if ((i + j) % 2 == 0) {
+                    cell.setBackground(Color.black);
+                } else {
+                    cell.setBackground(Color.white);
+                }
+
+                this.add(cell);
+            }
+        }
+
+
     }
 
-    public ImageIcon getIcon() {
+    private ImageIcon getIcon() {
         return icon;
     }
 
-    public void setIcon(ImageIcon icon) {
+    private void setIcon(ImageIcon icon) {
         this.icon = icon;
     }
 

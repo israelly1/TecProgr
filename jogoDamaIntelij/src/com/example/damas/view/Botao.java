@@ -33,14 +33,6 @@ public class Botao implements ActionListener {
         this.boardView = boardView;
     }
 
-    public void actionPerformed(ActionEvent e) {
-        if (this.botao.getIcon() != null) {
-            //	tabuleiro.setIcon(this.botao.getIcon());
-            this.botao.setIcon(null);
-        } else if (boardView.getIcon() != null) {
-            this.botao.setIcon(boardView.getIcon());
-        }
-
-    }
-
+    @Override
+    public void actionPerformed(ActionEvent e) {}
 }

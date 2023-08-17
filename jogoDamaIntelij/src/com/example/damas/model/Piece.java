@@ -1,3 +1,3 @@
 package com.example.damas.model;
 
-public record Piece(Color color) {}
+public record Piece(PieceColor pieceColor) {}
