@@ -1,5 +1,5 @@
 package com.example.damas.model;
 
-public enum Color {
+public enum PieceColor {
     WHITE, BLACK
 }
